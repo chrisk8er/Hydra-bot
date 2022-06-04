@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Installation | hydra-bot - v1.0.14</title>
+	<title>Web service | hydra-bot - v1.0.14</title>
 	<meta name="description" content="Documentation for hydra-bot - v1.0.14">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../../assets/css/main.css">
@@ -67,10 +67,10 @@
 					<a href="installation.html">Getting Started</a>
 				</li>
 				<li>
-					<a href="installation.html">Installation</a>
+					<a href="web_service.html">Web service</a>
 				</li>
 			</ul>
-			<h1>Installation</h1>
+			<h1>Web service</h1>
 		</div>
 	</div>
 </header>
@@ -78,11 +78,15 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
-					<h1>Installation</h1>
+				<a href="#getting-started-web-service" id="getting-started-web-service" style="color: inherit; text-decoration: none;">
+					<h2>Getting started Web Service</h2>
 				</a>
-				<p>The first thing that you had to do is install the <code>npm package</code>:</p>
-				<pre><code class="language-bash"><span style="color: #000000">npm i --save hydra-bot</span>
+				<p>The service will be started on localhost on port 8080</p>
+				<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">hydraBot</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;hydra-bot&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">(</span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// start Web Service</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">WS</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">hydraBot</span><span style="color: #000000">.</span><span style="color: #795E26">initWs</span><span style="color: #000000">();</span>
+<span style="color: #000000">});</span>
 </code></pre>
 			</div>
 		</div>
@@ -92,7 +96,7 @@
 					<li class="label pp-nav pp-group">
 						<span>Getting <wbr>Started</span>
 					</li>
-					<li class="current pp-nav pp-page">
+					<li class=" pp-nav pp-page">
 						<a href="installation.html">Installation</a>
 					</li>
 					<li class=" pp-nav pp-page">
@@ -104,7 +108,7 @@
 					<li class=" pp-nav pp-page">
 						<a href="start_bot.html">Start <wbr>Bot</a>
 					</li>
-					<li class=" pp-nav pp-page">
+					<li class="current pp-nav pp-page">
 						<a href="web_service.html">Web service</a>
 					</li>
 					<li class="label pp-nav pp-group">

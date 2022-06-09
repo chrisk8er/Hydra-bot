@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>webPack | hydra-bot - v1.0.14</title>
-	<meta name="description" content="Documentation for hydra-bot - v1.0.14">
+	<title>webPack | hydra-bot - v1.0.15</title>
+	<meta name="description" content="Documentation for hydra-bot - v1.0.15">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<link rel="stylesheet" href="../assets/css/pages.css">
@@ -32,7 +32,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">hydra-bot - v1.0.14</a>
+					<a href="../index.html" class="title">hydra-bot - v1.0.15</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -61,7 +61,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">hydra-bot - v1.0.14</a>
+					<a href="../modules.html">hydra-bot - v1.0.15</a>
 				</li>
 				<li>
 					<a href="webPack.html">webPack</a>
@@ -103,6 +103,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#autoCloseInterval" class="tsd-kind-icon">auto<wbr>Close<wbr>Interval</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#autoCloseRemain" class="tsd-kind-icon">auto<wbr>Close<wbr>Remain</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#browser" class="tsd-kind-icon">browser</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#ev" class="tsd-kind-icon">ev</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#page" class="tsd-kind-icon">page</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#startScanQrcode" class="tsd-kind-icon">start<wbr>Scan<wbr>Qrcode</a></li>
@@ -113,10 +114,9 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#asciiQr" class="tsd-kind-icon">ascii<wbr>Qr</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#cancelAutoClose" class="tsd-kind-icon">cancel<wbr>Auto<wbr>Close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#initLitener" class="tsd-kind-icon">init<wbr>Litener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#initModeInterfaceChange" class="tsd-kind-icon">init<wbr>Mode<wbr>Interface<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="webPack.html#initService" class="tsd-kind-icon">init<wbr>Service</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#on" class="tsd-kind-icon">on</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#onChange" class="tsd-kind-icon">on<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#qrCode" class="tsd-kind-icon">qr<wbr>Code</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#qrCodeScan" class="tsd-kind-icon">qr<wbr>Code<wbr>Scan</a></li>
@@ -132,14 +132,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new web<wbr>Pack<span class="tsd-signature-symbol">(</span>page<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Page</span>, browser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Browser</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CreateOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="webPack.html" class="tsd-signature-type" data-tsd-kind="Class">webPack</a></li>
+						<li class="tsd-signature tsd-kind-icon">new web<wbr>Pack<span class="tsd-signature-symbol">(</span>page<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Page</span>, browser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Browser</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CreateOptions</span>, ev<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="webPack.html" class="tsd-signature-type" data-tsd-kind="Class">webPack</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides SenderLayer.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/inject/webpack.ts#L7">webpack/inject/webpack.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/inject/webpack.ts#L7">webpack/inject/webpack.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -152,6 +152,9 @@
 								</li>
 								<li>
 									<h5>options: <span class="tsd-signature-type">CreateOptions</span></h5>
+								</li>
+								<li>
+									<h5>ev: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="webPack.html" class="tsd-signature-type" data-tsd-kind="Class">webPack</a></h4>
@@ -168,7 +171,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from SenderLayer.autoCloseInterval</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/scraping.layes.ts#L11">webpack/api/layes/scraping.layes.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/scraping.layes.ts#L9">webpack/api/layes/scraping.layes.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +182,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from SenderLayer.autoCloseRemain</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/scraping.layes.ts#L12">webpack/api/layes/scraping.layes.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/scraping.layes.ts#L10">webpack/api/layes/scraping.layes.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -189,6 +192,14 @@
 					<div class="tsd-signature tsd-kind-icon">browser<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Browser</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from SenderLayer.browser</p>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="ev" class="tsd-anchor"></a>
+					<h3>ev</h3>
+					<div class="tsd-signature tsd-kind-icon">ev<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from SenderLayer.ev</p>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -214,7 +225,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from SenderLayer.startScanQrcode</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/scraping.layes.ts#L10">webpack/api/layes/scraping.layes.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/scraping.layes.ts#L8">webpack/api/layes/scraping.layes.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -225,7 +236,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from SenderLayer.statusFind</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/listener.layes.ts#L9">webpack/api/layes/listener.layes.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/listener.layes.ts#L9">webpack/api/layes/listener.layes.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -243,7 +254,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.asciiQr</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/scraping.layes.ts#L114">webpack/api/layes/scraping.layes.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/scraping.layes.ts#L115">webpack/api/layes/scraping.layes.ts:115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -253,6 +264,24 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="cancelAutoClose" class="tsd-anchor"></a>
+					<h3>cancel<wbr>Auto<wbr>Close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">cancel<wbr>Auto<wbr>Close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SenderLayer.cancelAutoClose</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/scraping.layes.ts#L34">webpack/api/layes/scraping.layes.ts:34</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -267,25 +296,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.initLitener</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/listener.layes.ts#L84">webpack/api/layes/listener.layes.ts:84</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="initModeInterfaceChange" class="tsd-anchor"></a>
-					<h3>init<wbr>Mode<wbr>Interface<wbr>Change</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">init<wbr>Mode<wbr>Interface<wbr>Change<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from SenderLayer.initModeInterfaceChange</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/listener.layes.ts#L53">webpack/api/layes/listener.layes.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/listener.layes.ts#L56">webpack/api/layes/listener.layes.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -302,54 +313,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/inject/webpack.ts#L21">webpack/inject/webpack.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/inject/webpack.ts#L21">webpack/inject/webpack.ts:21</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="on" class="tsd-anchor"></a>
-					<h3>on</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/onMode.html" class="tsd-signature-type" data-tsd-kind="Enumeration">onMode</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from SenderLayer.on</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/listener.layes.ts#L119">webpack/api/layes/listener.layes.ts:119</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>type: <a href="../enums/onMode.html" class="tsd-signature-type" data-tsd-kind="Enumeration">onMode</a></h5>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>state: <span class="tsd-signature-type">any</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -365,7 +331,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.onChange</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/listener.layes.ts#L42">webpack/api/layes/listener.layes.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/listener.layes.ts#L43">webpack/api/layes/listener.layes.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -407,7 +373,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.qrCode</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/scraping.layes.ts#L72">webpack/api/layes/scraping.layes.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/scraping.layes.ts#L73">webpack/api/layes/scraping.layes.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>base64Image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>urlCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -425,7 +391,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.qrCodeScan</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/listener.layes.ts#L19">webpack/api/layes/listener.layes.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/listener.layes.ts#L20">webpack/api/layes/listener.layes.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -443,7 +409,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.sendMessage</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/ce3b84a/src/webpack/api/layes/sender.layes.ts#L17">webpack/api/layes/sender.layes.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/2f5b5ca/src/webpack/api/layes/sender.layes.ts#L17">webpack/api/layes/sender.layes.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -507,6 +473,9 @@
 								<a href="webPack.html#browser" class="tsd-kind-icon">browser</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="webPack.html#ev" class="tsd-kind-icon">ev</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="webPack.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -522,16 +491,13 @@
 								<a href="webPack.html#asciiQr" class="tsd-kind-icon">ascii<wbr>Qr</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="webPack.html#initLitener" class="tsd-kind-icon">init<wbr>Litener</a>
+								<a href="webPack.html#cancelAutoClose" class="tsd-kind-icon">cancel<wbr>Auto<wbr>Close</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="webPack.html#initModeInterfaceChange" class="tsd-kind-icon">init<wbr>Mode<wbr>Interface<wbr>Change</a>
+								<a href="webPack.html#initLitener" class="tsd-kind-icon">init<wbr>Litener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="webPack.html#initService" class="tsd-kind-icon">init<wbr>Service</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="webPack.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="webPack.html#onChange" class="tsd-kind-icon">on<wbr>Change</a>

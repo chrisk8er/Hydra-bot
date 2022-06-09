@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>hydra-bot - v1.0.15</title>
-	<meta name="description" content="Documentation for hydra-bot - v1.0.15">
+	<title>hydra-bot - v1.0.16</title>
+	<meta name="description" content="Documentation for hydra-bot - v1.0.16">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/pages.css">
@@ -32,7 +32,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">hydra-bot - v1.0.15</a>
+					<a href="index.html" class="title">hydra-bot - v1.0.16</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -59,7 +59,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>hydra-bot - v1.0.15</h1>
+			<h1>hydra-bot - v1.0.16</h1>
 		</div>
 	</div>
 </header>
@@ -149,20 +149,20 @@
 
 <span style="color: #000000">    </span><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">;</span>
 <span style="color: #000000">    </span><span style="color: #008000">// start bot service</span>
-<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">webpack</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">hydraBot</span><span style="color: #000000">.</span><span style="color: #795E26">initServer</span><span style="color: #000000">();</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">ev</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">hydraBot</span><span style="color: #000000">.</span><span style="color: #795E26">initServer</span><span style="color: #000000">();</span>
 
 <span style="color: #000000">    </span><span style="color: #008000">// return to current whatsapp interface</span>
-<span style="color: #000000">    </span><span style="color: #001080">webpack</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;interfaceChange&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">change</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">ev</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;interfaceChange&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">change</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;interfaceChange: &quot;</span><span style="color: #000000">, </span><span style="color: #001080">change</span><span style="color: #000000">);</span>
 <span style="color: #000000">    });</span>
 
 <span style="color: #000000">    </span><span style="color: #008000">// return qrcode parameters</span>
-<span style="color: #000000">    </span><span style="color: #001080">webpack</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;qrcode&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">qrcode</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">ev</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;qrcode&#039;</span><span style="color: #000000">, (</span><span style="color: #001080">qrcode</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;qrcode: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">qrcode</span><span style="color: #000000">);</span>
 <span style="color: #000000">    });</span>
 
 <span style="color: #000000">    </span><span style="color: #008000">// return connection information</span>
-<span style="color: #000000">    </span><span style="color: #001080">webpack</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;connection&#039;</span><span style="color: #000000">, </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">conn</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">ev</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;connection&#039;</span><span style="color: #000000">, </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">conn</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 
 <span style="color: #000000">        </span><span style="color: #008000">// browser information!</span>
 <span style="color: #000000">        </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">conn</span><span style="color: #000000">.</span><span style="color: #001080">statusFind</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;browser&#039;</span><span style="color: #000000">) {</span>
@@ -189,7 +189,7 @@
 <span style="color: #000000">    });</span>
 
 <span style="color: #000000">    </span><span style="color: #008000">// return receive new messages</span>
-<span style="color: #000000">    </span><span style="color: #001080">webpack</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;newMessage&#039;</span><span style="color: #000000">, </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">newMsg</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">ev</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;newMessage&#039;</span><span style="color: #000000">, </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">newMsg</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">        </span><span style="color: #008000">// when is received</span>
 <span style="color: #000000">        </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (!</span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">isSentByMe</span><span style="color: #000000">) {</span>
 <span style="color: #000000">            </span><span style="color: #008000">// message received!</span>
@@ -219,7 +219,7 @@
 <span style="color: #000000">  </span><span style="color: #001080">timeAutoClose:</span><span style="color: #000000"> </span><span style="color: #098658">60000</span><span style="color: #000000">, </span><span style="color: #008000">// If you don&#039;t read the QR CODE by default 60 seconds, it will automatically close the client&#039;s browser to save memory, if you want to disable it, set 0 or false</span>
 <span style="color: #000000">  </span><span style="color: #001080">mkdirFolderToken:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">, </span><span style="color: #008000">// Token folder path, only inside the project</span>
 <span style="color: #000000">  </span><span style="color: #001080">puppeteerOptions:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">headless:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;false&quot;</span><span style="color: #000000">, </span><span style="color: #008000">// Start the project with the browser open or not!</span>
+<span style="color: #000000">    </span><span style="color: #001080">headless:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">, </span><span style="color: #008000">// Start the project with the browser open or not!</span>
 <span style="color: #000000">    </span><span style="color: #001080">args:</span><span style="color: #000000"> [], </span><span style="color: #008000">// Additional arguments to pass to the browser instance. adding any parameter you will replace the default args of the project</span>
 <span style="color: #000000">    </span><span style="color: #001080">executablePath:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;useChrome&#039;</span><span style="color: #000000"> </span><span style="color: #008000">// The browser that will be used for the project, you can specify a path, if you don&#039;t pass any parameters it will open the installed browser.</span>
 <span style="color: #000000">  }</span>
@@ -244,7 +244,7 @@
 <span style="color: #000000">  </span><span style="color: #001080">timeAutoClose:</span><span style="color: #000000"> </span><span style="color: #098658">60000</span><span style="color: #000000">, </span><span style="color: #008000">// If you don&#039;t read the QR CODE by default 60 seconds, it will automatically close the client&#039;s browser to save memory, if you want to disable it, set 0 or false</span>
 <span style="color: #000000">  </span><span style="color: #001080">mkdirFolderToken:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">, </span><span style="color: #008000">// Token folder path, only inside the project</span>
 <span style="color: #000000">  </span><span style="color: #001080">puppeteerOptions:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #001080">headless:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;false&quot;</span><span style="color: #000000">, </span><span style="color: #008000">// Start the project with the browser open or not!</span>
+<span style="color: #000000">    </span><span style="color: #001080">headless:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">, </span><span style="color: #008000">// Start the project with the browser open or not!</span>
 <span style="color: #000000">    </span><span style="color: #001080">args:</span><span style="color: #000000"> [], </span><span style="color: #008000">// Additional arguments to pass to the browser instance. adding any parameter you will replace the default args of the project</span>
 <span style="color: #000000">    </span><span style="color: #001080">executablePath:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;useChrome&#039;</span><span style="color: #000000"> </span><span style="color: #008000">// The browser that will be used for the project, you can specify a path, if you don&#039;t pass any parameters it will open the installed browser.</span>
 <span style="color: #000000">  }</span>

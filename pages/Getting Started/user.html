@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>User | hydra-bot - v1.0.18</title>
-	<meta name="description" content="Documentation for hydra-bot - v1.0.18">
+	<title>User | hydra-bot - v1.0.19</title>
+	<meta name="description" content="Documentation for hydra-bot - v1.0.19">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../../assets/css/main.css">
 	<link rel="stylesheet" href="../../assets/css/pages.css">
@@ -32,7 +32,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../../index.html" class="title">hydra-bot - v1.0.18</a>
+					<a href="../../index.html" class="title">hydra-bot - v1.0.19</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -61,7 +61,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../../modules.html">hydra-bot - v1.0.18</a>
+					<a href="../../modules.html">hydra-bot - v1.0.19</a>
 				</li>
 				<li>
 					<a href="installation.html">Getting Started</a>
@@ -124,7 +124,19 @@
 							<td>POST</td>
 							<td><code>/sendFile</code></td>
 							<td>Send file to a number</td>
-							<td><code>javascript{&quot;to&quot;: &quot;contact number&quot;,  &quot;file_path&quot;: &quot;https://docs.marklogic.com/guide/node-dev.pdf&quot;, &quot;file_name&quot;: &quot;node.js&quot;}}</code></td>
+							<td><code>{ &quot;to&quot;: &quot;contact number&quot;,  &quot;file_path&quot;: &quot;https://docs.marklogic.com/guide/node-dev.pdf&quot;, &quot;file_name&quot;: &quot;node.js&quot; }</code></td>
+						</tr>
+						<tr>
+							<td>POST</td>
+							<td><code>/sendAudio</code></td>
+							<td>Send audio</td>
+							<td><code>{ &quot;to&quot;: &quot;contact number&quot;,  &quot;url_mp3&quot;: &quot;https://cdn.freesound.org/previews/620/620094_4935038-lq.mp3&quot; }</code></td>
+						</tr>
+						<tr>
+							<td>POST</td>
+							<td><code>/sendImage</code></td>
+							<td>Send image message</td>
+							<td><code>{ &quot;to&quot;: &quot;contact number&quot;,  &quot;url_img&quot;: &quot;https://i.pinimg.com/564x/a9/b1/18/a9b118761788b1ab260aae2835c468cd.jpg&quot; }</code></td>
 						</tr>
 				</tbody></table>
 			</div>

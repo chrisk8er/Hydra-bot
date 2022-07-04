@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>hydra-bot - v1.0.20</title>
-	<meta name="description" content="Documentation for hydra-bot - v1.0.20">
+	<title>hydra-bot - v1.0.21</title>
+	<meta name="description" content="Documentation for hydra-bot - v1.0.21">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/pages.css">
@@ -32,7 +32,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">hydra-bot - v1.0.20</a>
+					<a href="index.html" class="title">hydra-bot - v1.0.21</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -59,7 +59,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>hydra-bot - v1.0.20</h1>
+			<h1>hydra-bot - v1.0.21</h1>
 		</div>
 	</div>
 </header>
@@ -154,6 +154,8 @@
 				<p>If you want to work in free mode, using only the bot, dry the necessary information!</p>
 				<pre><code class="language-javascript">
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">hydraBot</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;hydra-bot&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">mime</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;mime-types&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">fs</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;fs&#039;</span><span style="color: #000000">);</span>
 
 <span style="color: #000000">(</span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 
@@ -203,6 +205,16 @@
 <span style="color: #000000">        </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (!</span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">isSentByMe</span><span style="color: #000000">) {</span>
 <span style="color: #000000">            </span><span style="color: #008000">// message received!</span>
 <span style="color: #000000">            </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;NewMessageReceived: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">);</span>
+<span style="color: #000000">            </span><span style="color: #008000">// dowload files</span>
+<span style="color: #000000">            </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">isMedia</span><span style="color: #000000"> === </span><span style="color: #0000FF">true</span><span style="color: #000000"> || </span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">isMMS</span><span style="color: #000000"> === </span><span style="color: #0000FF">true</span><span style="color: #000000">) {</span>
+<span style="color: #000000">                </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">buffer</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">decryptFile</span><span style="color: #000000">(</span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">);</span>
+<span style="color: #000000">                </span><span style="color: #008000">// At this point you can do whatever you want with the buffer</span>
+<span style="color: #000000">                </span><span style="color: #008000">// Most likely you want to write it into a file</span>
+<span style="color: #000000">                </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">fileName</span><span style="color: #000000"> = </span><span style="color: #A31515">`some-file-name.</span><span style="color: #0000FF">${</span><span style="color: #001080">mime</span><span style="color: #000000FF">.</span><span style="color: #795E26">extension</span><span style="color: #000000FF">(</span><span style="color: #001080">newMsg</span><span style="color: #000000FF">.</span><span style="color: #001080">result</span><span style="color: #000000FF">.</span><span style="color: #001080">mimetype</span><span style="color: #000000FF">)</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">;</span>
+<span style="color: #000000">                </span><span style="color: #001080">fs</span><span style="color: #000000">.</span><span style="color: #795E26">writeFile</span><span style="color: #000000">(</span><span style="color: #001080">fileName</span><span style="color: #000000">, </span><span style="color: #001080">buffer</span><span style="color: #000000">, (</span><span style="color: #001080">err</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">                    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">err</span><span style="color: #000000">);</span>
+<span style="color: #000000">                });</span>
+<span style="color: #000000">            }</span>
 <span style="color: #000000">        }</span>
 <span style="color: #000000">        </span><span style="color: #008000">// when is it sent</span>
 <span style="color: #000000">        </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (!!</span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">isSentByMe</span><span style="color: #000000">) {</span>
@@ -219,6 +231,45 @@
 <span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;To Message: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">to</span><span style="color: #000000">); </span><span style="color: #008000">// to message</span>
 <span style="color: #000000">    });</span>
 
+<span style="color: #000000">})();</span>
+</code></pre>
+				<a href="#downloading-files" id="downloading-files" style="color: inherit; text-decoration: none;">
+					<h2>Downloading Files</h2>
+				</a>
+				<p>Puppeteer takes care of the file downloading. The decryption is being done as
+				fast as possible (outruns native methods). Supports big files!</p>
+				<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">hydraBot</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;hydra-bot&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">fs</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;fs&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">mime</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;mime-types&#039;</span><span style="color: #000000">);</span>
+
+<span style="color: #000000">(</span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">;</span>
+<span style="color: #000000">    </span><span style="color: #008000">// start bot service</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">ev</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">hydraBot</span><span style="color: #000000">.</span><span style="color: #795E26">initServer</span><span style="color: #000000">();</span>
+<span style="color: #000000">    </span><span style="color: #008000">// return connection information</span>
+<span style="color: #000000">    </span><span style="color: #001080">ev</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;connection&#039;</span><span style="color: #000000">, </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">conn</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">        </span><span style="color: #008000">// Was connected to whatsapp chat</span>
+<span style="color: #000000">        </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">conn</span><span style="color: #000000">.</span><span style="color: #001080">connect</span><span style="color: #000000">) {</span>
+<span style="color: #000000">            </span><span style="color: #001080">client</span><span style="color: #000000"> = </span><span style="color: #001080">conn</span><span style="color: #000000">.</span><span style="color: #001080">client</span><span style="color: #000000">;</span>
+<span style="color: #000000">        }</span>
+<span style="color: #000000">    });</span>
+<span style="color: #000000">    </span><span style="color: #001080">ev</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;newMessage&#039;</span><span style="color: #000000">, </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">newMsg</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">             </span><span style="color: #008000">// when is received</span>
+<span style="color: #000000">            </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (!</span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">isSentByMe</span><span style="color: #000000">) {</span>
+<span style="color: #000000">                </span><span style="color: #008000">// message received!</span>
+<span style="color: #000000">                </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;NewMessageReceived: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">);</span>
+<span style="color: #000000">                </span><span style="color: #008000">// dowload files</span>
+<span style="color: #000000">                </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">isMedia</span><span style="color: #000000"> === </span><span style="color: #0000FF">true</span><span style="color: #000000"> || </span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">isMMS</span><span style="color: #000000"> === </span><span style="color: #0000FF">true</span><span style="color: #000000">) {</span>
+<span style="color: #000000">                    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">buffer</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">decryptFile</span><span style="color: #000000">(</span><span style="color: #001080">newMsg</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">);</span>
+<span style="color: #000000">                    </span><span style="color: #008000">// At this point you can do whatever you want with the buffer</span>
+<span style="color: #000000">                    </span><span style="color: #008000">// Most likely you want to write it into a file</span>
+<span style="color: #000000">                    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">fileName</span><span style="color: #000000"> = </span><span style="color: #A31515">`some-file-name.</span><span style="color: #0000FF">${</span><span style="color: #001080">mime</span><span style="color: #000000FF">.</span><span style="color: #795E26">extension</span><span style="color: #000000FF">(</span><span style="color: #001080">newMsg</span><span style="color: #000000FF">.</span><span style="color: #001080">result</span><span style="color: #000000FF">.</span><span style="color: #001080">mimetype</span><span style="color: #000000FF">)</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">;</span>
+<span style="color: #000000">                    </span><span style="color: #001080">fs</span><span style="color: #000000">.</span><span style="color: #795E26">writeFile</span><span style="color: #000000">(</span><span style="color: #001080">fileName</span><span style="color: #000000">, </span><span style="color: #001080">buffer</span><span style="color: #000000">, (</span><span style="color: #001080">err</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">                        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">err</span><span style="color: #000000">);</span>
+<span style="color: #000000">                    });</span>
+<span style="color: #000000">                }</span>
+<span style="color: #000000">            }</span>
+<span style="color: #000000">    });</span>
 <span style="color: #000000">})();</span>
 </code></pre>
 				<a href="#optional-create-parameters-the-bot-in-raw-form-without-using-a-web-services" id="optional-create-parameters-the-bot-in-raw-form-without-using-a-web-services" style="color: inherit; text-decoration: none;">
@@ -473,6 +524,18 @@
 							<td>Send image message</td>
 							<td><code>{ &quot;to&quot;: &quot;contact number&quot;,  &quot;url_img&quot;: &quot;https://i.pinimg.com/564x/a9/b1/18/a9b118761788b1ab260aae2835c468cd.jpg&quot; }</code></td>
 						</tr>
+						<tr>
+							<td>POST</td>
+							<td><code>/disconnect</code></td>
+							<td>Disconnecting from the server</td>
+							<td>EMPTY</td>
+						</tr>
+						<tr>
+							<td>POST</td>
+							<td><code>/check_user</code></td>
+							<td>Check if the entered user exists</td>
+							<td>EMPTY</td>
+						</tr>
 				</tbody></table>
 				<a href="#methods-get" id="methods-get" style="color: inherit; text-decoration: none;">
 					<h3>Methods GET</h3>
@@ -490,6 +553,18 @@
 							<td>GET</td>
 							<td><code>/get_all_contacts</code></td>
 							<td>Retrieve contacts</td>
+							<td><code>EMPTY</code></td>
+						</tr>
+						<tr>
+							<td>GET</td>
+							<td><code>/check_connect</code></td>
+							<td>check if the client is connected</td>
+							<td><code>EMPTY</code></td>
+						</tr>
+						<tr>
+							<td>GET</td>
+							<td><code>/last_qrcode</code></td>
+							<td>Check if the QR-Code is active</td>
 							<td><code>EMPTY</code></td>
 						</tr>
 				</tbody></table>
@@ -665,6 +740,9 @@
 					</li>
 					<li class=" pp-nav pp-page">
 						<a href="pages/Getting Started/user.html">User <wbr>Routers</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="pages/Getting Started/retrieving_data.html">Downloading <wbr>Files</a>
 					</li>
 					<li class=" pp-nav pp-page">
 						<a href="pages/Getting Started/retrieving_data.html">Retrieving <wbr>Data</a>

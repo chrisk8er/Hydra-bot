@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>webPack | hydra-bot - v1.0.24</title>
-	<meta name="description" content="Documentation for hydra-bot - v1.0.24">
+	<title>webPack | hydra-bot - v1.0.25</title>
+	<meta name="description" content="Documentation for hydra-bot - v1.0.25">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<link rel="stylesheet" href="../assets/css/pages.css">
@@ -32,7 +32,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">hydra-bot - v1.0.24</a>
+					<a href="../index.html" class="title">hydra-bot - v1.0.25</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -61,7 +61,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">hydra-bot - v1.0.24</a>
+					<a href="../modules.html">hydra-bot - v1.0.25</a>
 				</li>
 				<li>
 					<a href="webPack.html">webPack</a>
@@ -107,14 +107,17 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#page" class="tsd-kind-icon">page</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#startScanQrcode" class="tsd-kind-icon">start<wbr>Scan<wbr>Qrcode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#urlCode" class="tsd-kind-icon">url<wbr>Code</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#addChatWapi" class="tsd-kind-icon">add<wbr>Chat<wbr>Wapi</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#addParticipant" class="tsd-kind-icon">add<wbr>Participant</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#asciiQr" class="tsd-kind-icon">ascii<wbr>Qr</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#cancelAutoClose" class="tsd-kind-icon">cancel<wbr>Auto<wbr>Close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#createGroup" class="tsd-kind-icon">create<wbr>Group</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#decryptFile" class="tsd-kind-icon">decrypt<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#getAllContacts" class="tsd-kind-icon">get<wbr>All<wbr>Contacts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="webPack.html#initLitener" class="tsd-kind-icon">init<wbr>Litener</a></li>
@@ -145,7 +148,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides SenderLayer.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/inject/webpack.ts#L7">webpack/inject/webpack.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/inject/webpack.ts#L7">webpack/inject/webpack.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -177,7 +180,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from SenderLayer.autoCloseInterval</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/scraping.layes.ts#L9">webpack/api/layes/scraping.layes.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/scraping.layes.ts#L9">webpack/api/layes/scraping.layes.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -188,7 +191,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from SenderLayer.autoCloseRemain</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/scraping.layes.ts#L10">webpack/api/layes/scraping.layes.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/scraping.layes.ts#L10">webpack/api/layes/scraping.layes.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +234,18 @@
 					<aside class="tsd-sources">
 						<p>Inherited from SenderLayer.startScanQrcode</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/scraping.layes.ts#L8">webpack/api/layes/scraping.layes.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/scraping.layes.ts#L8">webpack/api/layes/scraping.layes.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="urlCode" class="tsd-anchor"></a>
+					<h3>url<wbr>Code</h3>
+					<div class="tsd-signature tsd-kind-icon">url<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;&#x27;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from SenderLayer.urlCode</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/listener.layes.ts#L9">webpack/api/layes/listener.layes.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +263,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.addChatWapi</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/whatsapp.ts#L62">webpack/api/layes/whatsapp.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/whatsapp.ts#L62">webpack/api/layes/whatsapp.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -258,6 +272,44 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="addParticipant" class="tsd-anchor"></a>
+					<h3>add<wbr>Participant</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Participant<span class="tsd-signature-symbol">(</span>groupId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, contacts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SenderLayer.addParticipant</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/group.layer.ts#L44">webpack/api/layes/group.layer.ts:44</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds participant to Group</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>groupId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Chat id (&#39;<a href="mailto:0000000000-00000000@g.us">0000000000-00000000@g.us</a>&#39;)</p>
+									</div>
+								</li>
+								<li>
+									<h5>contacts: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Participants id &#39;<a href="mailto:000000000000@c.us">000000000000@c.us</a>&#39;</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -272,7 +324,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.asciiQr</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/scraping.layes.ts#L115">webpack/api/layes/scraping.layes.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/scraping.layes.ts#L115">webpack/api/layes/scraping.layes.ts:115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -296,10 +348,48 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.cancelAutoClose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/scraping.layes.ts#L34">webpack/api/layes/scraping.layes.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/scraping.layes.ts#L34">webpack/api/layes/scraping.layes.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="createGroup" class="tsd-anchor"></a>
+					<h3>create<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Group<span class="tsd-signature-symbol">(</span>groupName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, contacts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SenderLayer.createGroup</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/group.layer.ts#L20">webpack/api/layes/group.layer.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new chat group</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>groupName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Group name</p>
+									</div>
+								</li>
+								<li>
+									<h5>contacts: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Participants id &#39;<a href="mailto:000000000000@c.us">000000000000@c.us</a>&#39;</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -314,7 +404,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.decryptFile</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/whatsapp.ts#L22">webpack/api/layes/whatsapp.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/whatsapp.ts#L22">webpack/api/layes/whatsapp.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,7 +437,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.getAllContacts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/retriever.layer.ts#L19">webpack/api/layes/retriever.layer.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/retriever.layer.ts#L19">webpack/api/layes/retriever.layer.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -371,7 +461,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.initLitener</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/listener.layes.ts#L47">webpack/api/layes/listener.layes.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/listener.layes.ts#L49">webpack/api/layes/listener.layes.ts:49</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -388,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/inject/webpack.ts#L21">webpack/inject/webpack.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/inject/webpack.ts#L21">webpack/inject/webpack.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -406,7 +496,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.qrCode</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/scraping.layes.ts#L73">webpack/api/layes/scraping.layes.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/scraping.layes.ts#L73">webpack/api/layes/scraping.layes.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>base64Image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>urlCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -424,7 +514,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.qrCodeScan</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/listener.layes.ts#L18">webpack/api/layes/listener.layes.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/listener.layes.ts#L19">webpack/api/layes/listener.layes.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -442,7 +532,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.sendAudio</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/sender.layes.ts#L218">webpack/api/layes/sender.layes.ts:218</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/sender.layes.ts#L218">webpack/api/layes/sender.layes.ts:218</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -483,7 +573,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.sendAudioBase64</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/sender.layes.ts#L175">webpack/api/layes/sender.layes.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/sender.layes.ts#L175">webpack/api/layes/sender.layes.ts:175</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -524,7 +614,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.sendFile</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/sender.layes.ts#L96">webpack/api/layes/sender.layes.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/sender.layes.ts#L96">webpack/api/layes/sender.layes.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -565,7 +655,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.sendImage</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/sender.layes.ts#L29">webpack/api/layes/sender.layes.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/sender.layes.ts#L29">webpack/api/layes/sender.layes.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -606,7 +696,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.sendMessage</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/sender.layes.ts#L264">webpack/api/layes/sender.layes.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/sender.layes.ts#L264">webpack/api/layes/sender.layes.ts:264</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -630,7 +720,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from SenderLayer.sendText</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/9db92a6/src/webpack/api/layes/sender.layes.ts#L150">webpack/api/layes/sender.layes.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/jonalan7/Hydra-bot/blob/3ae2077/src/webpack/api/layes/sender.layes.ts#L150">webpack/api/layes/sender.layes.ts:150</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -671,29 +761,32 @@
 					<li class=" pp-nav pp-page">
 						<a href="../pages/Getting Started/installation.html">Installation</a>
 					</li>
-					<li class=" pp-nav pp-page">
+					<li class=" pp-nav pp-page pp-parent">
 						<a href="../pages/Getting Started/web_service.html">Web service</a>
 					</li>
 					<li class=" pp-nav pp-page">
 						<a href="../pages/Getting Started/start_bot.html">Start <wbr>Bot</a>
 					</li>
-					<li class=" pp-nav pp-page">
-						<a href="../pages/Getting Started/send_options.html">Send <wbr>Options <wbr>Functions</a>
+					<li class="label pp-nav pp-group">
+						<span>How <wbr>To</span>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="../pages/Getting Started/send_functions.html">Send functions</a>
+						<a href="../pages/How To/send_options.html">Send <wbr>Messages <wbr>Options</a>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="../pages/Getting Started/admin.html">Administration</a>
+						<a href="../pages/How To/send_functions.html">Send <wbr>Messages</a>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="../pages/Getting Started/user.html">User <wbr>Routers</a>
+						<a href="../pages/How To/retrieving_data.html">Retrieving <wbr>Data</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Management</span>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="../pages/Getting Started/downloading_files.html">Downloading <wbr>Files</a>
+						<a href="../pages/Management/group_functions.html">Group <wbr>Management</a>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="../pages/Getting Started/retrieving_data.html">Retrieving <wbr>Data</a>
+						<a href="../pages/Management/downloading_files.html">Downloading <wbr>Files</a>
 					</li>
 					<li class=" ">
 						<a href="../modules.html">Exports</a>
@@ -734,14 +827,23 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="webPack.html#startScanQrcode" class="tsd-kind-icon">start<wbr>Scan<wbr>Qrcode</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="webPack.html#urlCode" class="tsd-kind-icon">url<wbr>Code</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="webPack.html#addChatWapi" class="tsd-kind-icon">add<wbr>Chat<wbr>Wapi</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="webPack.html#addParticipant" class="tsd-kind-icon">add<wbr>Participant</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="webPack.html#asciiQr" class="tsd-kind-icon">ascii<wbr>Qr</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="webPack.html#cancelAutoClose" class="tsd-kind-icon">cancel<wbr>Auto<wbr>Close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="webPack.html#createGroup" class="tsd-kind-icon">create<wbr>Group</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="webPack.html#decryptFile" class="tsd-kind-icon">decrypt<wbr>File</a>

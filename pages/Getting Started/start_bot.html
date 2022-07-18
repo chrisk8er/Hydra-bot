@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Start Bot | hydra-bot - v1.0.24</title>
-	<meta name="description" content="Documentation for hydra-bot - v1.0.24">
+	<title>Start Bot | hydra-bot - v1.0.25</title>
+	<meta name="description" content="Documentation for hydra-bot - v1.0.25">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../../assets/css/main.css">
 	<link rel="stylesheet" href="../../assets/css/pages.css">
@@ -32,7 +32,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../../index.html" class="title">hydra-bot - v1.0.24</a>
+					<a href="../../index.html" class="title">hydra-bot - v1.0.25</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -61,7 +61,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../../modules.html">hydra-bot - v1.0.24</a>
+					<a href="../../modules.html">hydra-bot - v1.0.25</a>
 				</li>
 				<li>
 					<a href="installation.html">Getting Started</a>
@@ -143,10 +143,10 @@
 
 <span style="color: #000000">    </span><span style="color: #008000">// returns the status of each message</span>
 <span style="color: #000000">    </span><span style="color: #001080">ev</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;newOnAck&#039;</span><span style="color: #000000">, </span><span style="color: #0000FF">async</span><span style="color: #000000"> (</span><span style="color: #001080">event</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;id Message: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">.</span><span style="color: #001080">_serialized</span><span style="color: #000000">); </span><span style="color: #008000">// message id  </span>
-<span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Status Message: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">ack</span><span style="color: #000000">); </span><span style="color: #008000">// -7 = MD_DOWNGRADE, -6 = INACTIVE, -5 = CONTENT_UNUPLOADABLE, -4 = CONTENT_TOO_BIG, -3 = CONTENT_GONE, -2 = EXPIRED, -1 = FAILED, 0 = CLOCK, 1 = SENT, 2 = RECEIVED, 3 = READ, 4 = PLAYED</span>
-<span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;From Message: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">from</span><span style="color: #000000">); </span><span style="color: #008000">// from message</span>
-<span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;To Message: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">to</span><span style="color: #000000">); </span><span style="color: #008000">// to message</span>
+<span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;id Message: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">.</span><span style="color: #001080">_serialized</span><span style="color: #000000">); </span><span style="color: #008000">// message id  </span>
+<span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Status Message: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">ack</span><span style="color: #000000">); </span><span style="color: #008000">// -7 = MD_DOWNGRADE, -6 = INACTIVE, -5 = CONTENT_UNUPLOADABLE, -4 = CONTENT_TOO_BIG, -3 = CONTENT_GONE, -2 = EXPIRED, -1 = FAILED, 0 = CLOCK, 1 = SENT, 2 = RECEIVED, 3 = READ, 4 = PLAYED</span>
+<span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;From Message: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">from</span><span style="color: #000000">); </span><span style="color: #008000">// from message</span>
+<span style="color: #000000">        </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;To Message: &#039;</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #001080">to</span><span style="color: #000000">); </span><span style="color: #008000">// to message</span>
 <span style="color: #000000">    });</span>
 
 <span style="color: #000000">})();</span>
@@ -162,29 +162,32 @@
 					<li class=" pp-nav pp-page">
 						<a href="installation.html">Installation</a>
 					</li>
-					<li class=" pp-nav pp-page">
+					<li class=" pp-nav pp-page pp-parent">
 						<a href="web_service.html">Web service</a>
 					</li>
 					<li class="current pp-nav pp-page">
 						<a href="start_bot.html">Start <wbr>Bot</a>
 					</li>
-					<li class=" pp-nav pp-page">
-						<a href="send_options.html">Send <wbr>Options <wbr>Functions</a>
+					<li class="label pp-nav pp-group">
+						<span>How <wbr>To</span>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="send_functions.html">Send functions</a>
+						<a href="../How To/send_options.html">Send <wbr>Messages <wbr>Options</a>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="admin.html">Administration</a>
+						<a href="../How To/send_functions.html">Send <wbr>Messages</a>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="user.html">User <wbr>Routers</a>
+						<a href="../How To/retrieving_data.html">Retrieving <wbr>Data</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Management</span>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="downloading_files.html">Downloading <wbr>Files</a>
+						<a href="../Management/group_functions.html">Group <wbr>Management</a>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="retrieving_data.html">Retrieving <wbr>Data</a>
+						<a href="../Management/downloading_files.html">Downloading <wbr>Files</a>
 					</li>
 					<li class="label pp-nav pp-group">
 						<span>API</span>

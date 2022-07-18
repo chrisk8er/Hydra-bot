@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Send functions | hydra-bot - v1.0.24</title>
-	<meta name="description" content="Documentation for hydra-bot - v1.0.24">
+	<title>Send Messages | hydra-bot - v1.0.25</title>
+	<meta name="description" content="Documentation for hydra-bot - v1.0.25">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../../assets/css/main.css">
 	<link rel="stylesheet" href="../../assets/css/pages.css">
@@ -32,7 +32,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../../index.html" class="title">hydra-bot - v1.0.24</a>
+					<a href="../../index.html" class="title">hydra-bot - v1.0.25</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -61,16 +61,16 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../../modules.html">hydra-bot - v1.0.24</a>
+					<a href="../../modules.html">hydra-bot - v1.0.25</a>
 				</li>
 				<li>
-					<a href="installation.html">Getting Started</a>
+					<a href="send_options.html">How To</a>
 				</li>
 				<li>
-					<a href="send_functions.html">Send functions</a>
+					<a href="send_functions.html">Send Messages</a>
 				</li>
 			</ul>
-			<h1>Send functions</h1>
+			<h1>Send Messages</h1>
 		</div>
 	</div>
 </header>
@@ -81,10 +81,10 @@
 				<a href="#basic-send-functions" id="basic-send-functions" style="color: inherit; text-decoration: none;">
 					<h1>Basic send functions</h1>
 				</a>
-				<a href="#here-to-can-be-ltphone-numbergtcus-or-ltphone-numbergt-ltgroupidgtgus" id="here-to-can-be-ltphone-numbergtcus-or-ltphone-numbergt-ltgroupidgtgus" style="color: inherit; text-decoration: none;">
-					<h5>Here, <code>to</code> can be <code>&lt;phone Number&gt;@c.us</code> or <code>&lt;phone Number&gt;-&lt;groupId&gt;@g.us</code></h5>
+				<a href="#here-to-can-be-ltphone-numbergtcus-or-ltphone-numbergt-ltgroupidgtgus-or-ltphone-numbergtltgroupidgtgus" id="here-to-can-be-ltphone-numbergtcus-or-ltphone-numbergt-ltgroupidgtgus-or-ltphone-numbergtltgroupidgtgus" style="color: inherit; text-decoration: none;">
+					<h5>Here, <code>to</code> can be <code>&lt;phone Number&gt;@c.us</code> or <code>&lt;phone Number&gt;-&lt;groupId&gt;@g.us</code> or <code>&lt;phone Number&gt;&lt;groupId&gt;@g.us</code></h5>
 				</a>
-				<p><a href="https://jonalan7.github.io/Hydra-bot/pages/Getting%20Started/start_bot.html">to use these functions it is necessary to initialize the bot, click and learn more.</a></p>
+				<p><a href="../Getting%20Started/start_bot.html">to use these functions it is necessary to initialize the bot, click and learn more.</a></p>
 				<p>Send messages separately</p>
 				<a href="#summary" id="summary" style="color: inherit; text-decoration: none;">
 					<h2>Summary</h2>
@@ -94,13 +94,13 @@
 					<li><a href="#sendfile">sendFile</a></li>
 					<li><a href="#sendaudio">sendAudio</a></li>
 					<li><a href="#sendaudiobase64">sendAudioBase64</a></li>
-					<li><a href="#sendImage">sendImage</a></li>
+					<li><a href="#sendimage">sendImage</a></li>
 				</ul>
 				<a href="#sendtext" id="sendtext" style="color: inherit; text-decoration: none;">
 					<h3>sendText</h3>
 				</a>
 				<p>Sends a text message to given chat</p>
-				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">clinet</span><span style="color: #000000">.</span><span style="color: #795E26">sendText</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;A message sent by hydra-bot&quot;</span><span style="color: #000000">)</span>
+				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">sendText</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;A message sent by hydra-bot&quot;</span><span style="color: #000000">)</span>
 <span style="color: #000000">.</span><span style="color: #795E26">then</span><span style="color: #000000">((</span><span style="color: #001080">result</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">); </span><span style="color: #008000">// message result</span>
 <span style="color: #000000">}).</span><span style="color: #795E26">catch</span><span style="color: #000000">((</span><span style="color: #001080">error</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
@@ -111,7 +111,7 @@
 					<h3>sendFile</h3>
 				</a>
 				<p>Sends file from path</p>
-				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">clinet</span><span style="color: #000000">.</span><span style="color: #795E26">sendFile</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;./file.pdf&#039;</span><span style="color: #000000">, { </span><span style="color: #001080">filename:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;filename&#039;</span><span style="color: #000000"> })</span>
+				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">sendFile</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;./file.pdf&#039;</span><span style="color: #000000">, { </span><span style="color: #001080">filename:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;filename&#039;</span><span style="color: #000000"> })</span>
 <span style="color: #000000">.</span><span style="color: #795E26">then</span><span style="color: #000000">((</span><span style="color: #001080">result</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">); </span><span style="color: #008000">// message result</span>
 <span style="color: #000000">}).</span><span style="color: #795E26">catch</span><span style="color: #000000">((</span><span style="color: #001080">error</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
@@ -122,7 +122,7 @@
 					<h3>sendAudio</h3>
 				</a>
 				<p>Send audio file</p>
-				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">clinet</span><span style="color: #000000">.</span><span style="color: #795E26">sendAudio</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;./file.mp3&#039;</span><span style="color: #000000">)</span>
+				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">sendAudio</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;./file.mp3&#039;</span><span style="color: #000000">)</span>
 <span style="color: #000000">.</span><span style="color: #795E26">then</span><span style="color: #000000">((</span><span style="color: #001080">result</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">); </span><span style="color: #008000">// message result</span>
 <span style="color: #000000">}).</span><span style="color: #795E26">catch</span><span style="color: #000000">((</span><span style="color: #001080">error</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
@@ -133,7 +133,7 @@
 					<h3>sendAudioBase64</h3>
 				</a>
 				<p>Send audio base64</p>
-				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">clinet</span><span style="color: #000000">.</span><span style="color: #795E26">sendAudioBase64</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #001080">base64MP3</span><span style="color: #000000">)</span>
+				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">sendAudioBase64</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #001080">base64MP3</span><span style="color: #000000">)</span>
 <span style="color: #000000">.</span><span style="color: #795E26">then</span><span style="color: #000000">((</span><span style="color: #001080">result</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">); </span><span style="color: #008000">// message result</span>
 <span style="color: #000000">}).</span><span style="color: #795E26">catch</span><span style="color: #000000">((</span><span style="color: #001080">error</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
@@ -144,7 +144,7 @@
 					<h3>sendImage</h3>
 				</a>
 				<p>Send image message</p>
-				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">clinet</span><span style="color: #000000">.</span><span style="color: #795E26">sendImage</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;./file.jpg&#039;</span><span style="color: #000000">)</span>
+				<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">sendImage</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;0000000000@c.us&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;./file.jpg&#039;</span><span style="color: #000000">)</span>
 <span style="color: #000000">.</span><span style="color: #795E26">then</span><span style="color: #000000">((</span><span style="color: #001080">result</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">); </span><span style="color: #008000">// message result</span>
 <span style="color: #000000">}).</span><span style="color: #795E26">catch</span><span style="color: #000000">((</span><span style="color: #001080">error</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
@@ -160,31 +160,34 @@
 						<span>Getting <wbr>Started</span>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="installation.html">Installation</a>
+						<a href="../Getting Started/installation.html">Installation</a>
+					</li>
+					<li class=" pp-nav pp-page pp-parent">
+						<a href="../Getting Started/web_service.html">Web service</a>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="web_service.html">Web service</a>
+						<a href="../Getting Started/start_bot.html">Start <wbr>Bot</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>How <wbr>To</span>
 					</li>
 					<li class=" pp-nav pp-page">
-						<a href="start_bot.html">Start <wbr>Bot</a>
-					</li>
-					<li class=" pp-nav pp-page">
-						<a href="send_options.html">Send <wbr>Options <wbr>Functions</a>
+						<a href="send_options.html">Send <wbr>Messages <wbr>Options</a>
 					</li>
 					<li class="current pp-nav pp-page">
-						<a href="send_functions.html">Send functions</a>
-					</li>
-					<li class=" pp-nav pp-page">
-						<a href="admin.html">Administration</a>
-					</li>
-					<li class=" pp-nav pp-page">
-						<a href="user.html">User <wbr>Routers</a>
-					</li>
-					<li class=" pp-nav pp-page">
-						<a href="downloading_files.html">Downloading <wbr>Files</a>
+						<a href="send_functions.html">Send <wbr>Messages</a>
 					</li>
 					<li class=" pp-nav pp-page">
 						<a href="retrieving_data.html">Retrieving <wbr>Data</a>
+					</li>
+					<li class="label pp-nav pp-group">
+						<span>Management</span>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../Management/group_functions.html">Group <wbr>Management</a>
+					</li>
+					<li class=" pp-nav pp-page">
+						<a href="../Management/downloading_files.html">Downloading <wbr>Files</a>
 					</li>
 					<li class="label pp-nav pp-group">
 						<span>API</span>
